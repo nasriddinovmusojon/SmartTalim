@@ -1,7 +1,6 @@
 import uuid
 import os
 from django.db import models
-# from organizations.models import Organizations, Branch
 
 class BaseModel(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
